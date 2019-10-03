@@ -1,0 +1,44 @@
+<resources>
+    <style name="AppTheme">
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <item name="android:textColorPrimaryInverse">@color/baseColorInverse</item>
+    </style>
+    <style name="OutputWrapper">
+        <item name="android:background">@drawable/textview_border</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="CopyButton">
+        <item name="android:src">@drawable/ic_copy</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:enabled">false</item>
+    </style>
+    <style name="TextField">
+        <item name="android:textSize">32sp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+    <style name="GenerateButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/baseColorInverse</item>
+    </style>
+</resources>

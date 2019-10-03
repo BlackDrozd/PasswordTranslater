@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_description"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        style="@style/OutputWrapper">
+
+    <TextView
+        android:id="@+id/output_field"
+        style="@style/TextField"/>
+
+    <ImageButton
+        android:id="@+id/btn_copy_psw"
+        android:contentDescription="@string/copy_psw_btn_title"
+        style="@style/CopyButton" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_field"
+        android:layout_marginTop="8dp"
+        android:hint="Введите русский пароль"
+        style="@style/EditText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/password_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/image_password_strength"
+            tools:text="Очень слабый"
+            />
+
+        <ImageView
+            android:id="@id/image_password_strength"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/password_sensor" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/generate_password_title"
+        />
+
+    <CheckBox
+        android:id="@+id/isCapsEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/isUpperCaseEnabled"
+        />
+
+    <CheckBox
+        android:id="@+id/isDigitsEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/isNumbersEnabled"
+        />
+
+    <CheckBox
+        android:id="@+id/isSymbolsEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/isSymbolsEnabled"
+        />
+
+    <SeekBar
+        android:id="@+id/password_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        />
+
+    <TextView
+        android:id="@+id/text_password_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/length_psw_tip"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        style="@style/OutputWrapper">
+
+    <TextView
+        android:id="@+id/generated_password"
+        style="@style/TextField" />
+
+    <ImageButton
+        android:id="@+id/btn_copy_new_psw"
+        android:contentDescription="@string/copy_generated_psw"
+        style="@style/CopyButton" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_generate"
+        android:text="@string/title_button_generate"
+        style="@style/GenerateButton"
+        />
+
+</LinearLayout>
+</ScrollView>

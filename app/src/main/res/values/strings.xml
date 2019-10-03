@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">PasswordTranslater</string>
+    <string name="app_description">Здесь Вы можете посмотреть свой пароль, созданный по методу «русское слово в английской раскладке»</string>
+    <string name="generate_password_title">Сгенирируйте новый пароль ему на замену</string>
+    <string name="title_button_generate">генерировать</string>
+
+    <string name="clip_title">Пароль</string>
+    <string name="isUpperCaseEnabled">Заглавные</string>
+    <string name="isNumbersEnabled">Цифры</string>
+    <string name="isSymbolsEnabled">Спецсимволы</string>
+    <string name="copy_psw_btn_title">скопировать пароль</string>
+    <string name="copy_generated_psw">скопировать сгенерированный пароль</string>
+
+    <string-array name="rus_eng_dictionary">
+        <item>й:q</item>
+        <item>ц:w</item>
+        <item>у:e</item>
+        <item>к:r</item>
+        <item>е:t</item>
+        <item>н:y</item>
+    </string-array>
+
+    <string-array name="strengths">
+        <item>не покажем надежность пока не ведете пароль</item>
+        <item>стрём</item>
+        <item>норм</item>
+        <item>отлично</item>
+    </string-array>
+
+    <plurals name="symbols_count">
+        <item quantity="few">символа</item>
+        <item quantity="many">символов</item>
+        <item quantity="other">символов</item>
+    </plurals>
+
+    <string name="length_format">Длина пароля: 3 + %1$d %2$s = %3$d %4$s</string>
+    <string name="length_psw_tip">Длина пароля</string>
+
+</resources>
